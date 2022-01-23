@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Momentum App</title>
+</head>
+
+<body>
+  <header>
+    <form class="login-form hidden">
+      <input required maxlength="15" type="text" placeholder="What is your name?" />
+      <input type="submit" value="Log In" />
+    </form>
+  </header>
+  <main>
+    <h2 id="clock"></h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" required />
+    </form>
+    <ul id="todo-list">
+    </ul>
+  </main>
+  <bottom>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+  </bottom>
+  <script src="js/greetings.js"> </script>
+  <script src="js/clock.js"> </script>
+  <script src="js/quotes.js"> </script>
+  <script src="js/background.js"> </script>
+  <script src="js/todo.js"> </script>
+  <script src="js/weather.js"> </script>
+</body>
+
+</html>
+
+<!-- 1. Math 객체 기능
+Math.random() 0부터 1사이 무작위의 값을 반환해줌
+Math.floor() 내림
+Math.ceil() 올림
+Math.round() 반올림
+
+2. JS에서 html 요소를 생성
+createElement(" ")
+예를 들어,
+document.createElement("img")일 경우 html 내에 img 태그를 생성
+
+appendChild()
+// 함수 안의 경로에 정의한 값을 가장 뒤에서 기입함
+prependChild()
+// 반대로 앞에서 기입 -->

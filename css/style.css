@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  color: whitesmoke;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.hidden {
+  display: none;
+}
+#clock {
+  display: flex;
+  justify-content: center;
+  font-size: 150px;
+  font-weight: 500;
+  visibility: visible;
+}
+header input {
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+
+  border-collapse: separate;
+
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+
+  padding: 10px 15px 10px 15px;
+  font-weight: bold;
+  color: grey;
+}
+
+#greeting {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#todo-form,
+#todo-list {
+  display: flex;
+  justify-content: center;
+}
+#todo-list {
+  flex-direction: column;
+}
+main > #todo-form > input {
+  width: 100%;
+  padding-top: 4px;
+  display: block;
+  background: 0;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 500;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
