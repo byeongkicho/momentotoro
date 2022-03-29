@@ -14,7 +14,23 @@ function onLoginSubmit(event) {
 }
 
 function paintgreeting(username) {
-  greeting.innerText = `Hello ${username}`;
+  const hours = new Date().getHours();
+  const morning = ('morning');
+  const afternoon = ('afternoon');
+  const evening = ('evening');
+  if (hours >= 0 && hours < 12) {
+    message = morning;
+    document.body.className = "morning"; 
+
+} else if (hours >= 12 && hours < 17) {
+    message = afternoon;
+    document.body.className = "afternoon"; 
+
+} else if (hours >= 17 && hours < 24) {
+    message = evening;
+    document.body.className = "evening"; 
+}
+  greeting.innerText = `Good ${message} ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 

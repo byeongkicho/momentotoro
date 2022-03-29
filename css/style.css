@@ -1,13 +1,13 @@
 body {
   height: 100vh;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   font-family: "Jost", sans-serif;
   color: whitesmoke;
@@ -19,10 +19,13 @@ body {
 }
 #clock {
   display: flex;
+  margin: 0%;
+  align-items: center;
   justify-content: center;
   font-size: 150px;
   font-weight: 500;
   visibility: visible;
+  position: relative;
 }
 header input {
   border-radius: 10px;
@@ -40,6 +43,8 @@ header input {
 #greeting {
   display: flex;
   justify-content: center;
+  font-size: 70px;
+  margin: 0%;
 }
 
 main {
